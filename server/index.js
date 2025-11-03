@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
   pool.query('SELECT * FROM task', (err, result) => {
     if (err) {
-      console.error('SQL-virhe:', err.message); // Näytetään terminaaliin
+      console.error('SQL-virhe:', err.message); 
       return res.status(500).json({ error: err.message });
     }
     res.status(200).json(result.rows);
