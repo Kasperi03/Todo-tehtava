@@ -4,7 +4,7 @@ import './index.css'
 import App from './screens/App'
 import Authentication, { AuthenticationMode } from './screens/Authentication'
 import ProtectedRoute from './components/ProtectedRoute'
-import UserProvider from './context/userProvider'
+import UserProvider from './context/UserProvider'
 import { RouterProvider } from 'react-router-dom'
 import { createBrowserRouter } from "react-router-dom";
 import NotFound from "./screens/NotFound";
